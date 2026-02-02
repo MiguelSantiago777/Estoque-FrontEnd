@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+📦 Estoque-FrontEnd
+Interface moderna e responsiva desenvolvida em Next.js para o gerenciamento de controle de estoque. Este projeto é a camada visual que consome a Estoque-BackEnd.
 
-## Getting Started
+🚀 Funcionalidades
+Dashboard de Inventário: Visualização clara de todos os itens em estoque.
 
-First, run the development server:
+Gestão de Produtos: Interface para criação, edição e exclusão de itens (CRUD).
 
-```bash
+Integração com API: Consumo total de endpoints da API NestJS/Prisma.
+
+Design Responsivo: Adaptado para diferentes tamanhos de tela usando Tailwind CSS.
+
+🛠️ Tecnologias Utilizadas
+Framework: Next.js
+
+Linguagem: TypeScript
+
+Estilização: Tailwind CSS
+
+Ícones: Lucide React / React Icons (opcional)
+
+Requisições: Axios ou Fetch API
+
+🏁 Como Iniciar
+Pré-requisitos
+Node.js instalado (v18 ou superior)
+
+Repositório BackEnd rodando localmente
+
+Instalação
+Clone o repositório:
+
+Bash
+git clone https://github.com/MiguelSantiago777/Estoque-FrontEnd.git
+Entre na pasta:
+
+Bash
+cd Estoque-FrontEnd
+Instale as dependências:
+
+Bash
+npm install
+# ou
+yarn install
+Configure as variáveis de ambiente: Crie um arquivo .env.local na raiz e adicione a URL da sua API:
+
+Snippet de código
+NEXT_PUBLIC_API_URL=http://localhost:3000
+Rode o projeto:
+
+Bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Feito por Miguel Santiago

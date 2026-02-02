@@ -1,54 +1,48 @@
 📦 Estoque-FrontEnd
-Interface moderna e responsiva desenvolvida em Next.js para o gerenciamento de controle de estoque. Este projeto é a camada visual que consome a Estoque-BackEnd.
+Interface web moderna desenvolvida para o gerenciamento de estoque. Este projeto é o cliente oficial que consome a API do Estoque-BackEnd.
 
-🚀 Funcionalidades
-Dashboard de Inventário: Visualização clara de todos os itens em estoque.
+🛠️ O Ecossistema
+Para funcionar corretamente, este Front-End depende de uma infraestrutura que já está configurada no repositório de Back-End:
 
-Gestão de Produtos: Interface para criação, edição e exclusão de itens (CRUD).
+API: Nest.js (REST)
 
-Integração com API: Consumo total de endpoints da API NestJS/Prisma.
+ORM: Prisma
 
-Design Responsivo: Adaptado para diferentes tamanhos de tela usando Tailwind CSS.
+Banco de Dados: PostgreSQL
 
-🛠️ Tecnologias Utilizadas
-Framework: Next.js
+Infraestrutura: Docker & Docker Compose
 
-Linguagem: TypeScript
+🚀 Como Executar o Projeto
+1. Requisito Fundamental (O Back-End)
+Antes de iniciar este Front-End, o ambiente Docker do Back-End precisa estar rodando.
 
-Estilização: Tailwind CSS
+Bash
+# Vá até a pasta do repositório Estoque-BackEnd e rode:
+docker-compose up -d
+Isso subirá o banco PostgreSQL e a API Nest.js automaticamente.
 
-Ícones: Lucide React / React Icons (opcional)
-
-Requisições: Axios ou Fetch API
-
-🏁 Como Iniciar
-Pré-requisitos
-Node.js instalado (v18 ou superior)
-
-Repositório BackEnd rodando localmente
-
-Instalação
-Clone o repositório:
+2. Configuração do Front-End
+Clone este repositório e instale as dependências:
 
 Bash
 git clone https://github.com/MiguelSantiago777/Estoque-FrontEnd.git
-Entre na pasta:
-
-Bash
 cd Estoque-FrontEnd
-Instale as dependências:
-
-Bash
 npm install
-# ou
-yarn install
-Configure as variáveis de ambiente: Crie um arquivo .env.local na raiz e adicione a URL da sua API:
+3. Variáveis de Ambiente
+Crie um arquivo .env.local na raiz do projeto e aponte para a porta onde o Docker expôs a API (geralmente 3000):
 
 Snippet de código
 NEXT_PUBLIC_API_URL=http://localhost:3000
-Rode o projeto:
-
+4. Rodar em Desenvolvimento
 Bash
 npm run dev
+Acesse http://localhost:3001 para ver a interface.
 
-Feito por Miguel Santiago
+📁 Principais Funcionalidades Implementadas
+Consumo de API REST: Integração total com os endpoints de produtos e estoque.
+
+Tipagem Estrita: Uso de TypeScript para garantir que os dados vindos do Prisma no Back-End coincidam com a interface.
+
+Estilização com Tailwind: Interface limpa, rápida e totalmente responsiva.
+
+Desenvolvido por Miguel Santiago
